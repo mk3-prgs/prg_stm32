@@ -35,11 +35,15 @@ OS Debian, Ubuntu ...
 	записать файл file.hex
 	проверить
 	запустить picocom на /dev/ttyUSB0 [эмулятор терминала]
-</pre>
-Вывод prg_stm32:
-<img src="prg_stm32.jpg"> 
 
+Вывод prg_stm32:
+</pre>
+<img src="prg_stm32.jpg"> 
+<pre>
 Файл prg_stm32.cbp - проект IDE Code::Blocks
+</pre>
+
+
 
 
 
