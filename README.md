@@ -4,9 +4,8 @@ OS Debian, Ubuntu ...
 Программатор stm32, gd32.
 
 Сборка:
-
-make clean
-make
+	make clean
+	make
 
 Исполняемый файл ./bin/prg_stm32
 
@@ -32,4 +31,5 @@ make
 	записать файл file.hex
 	проверить
 	запустить picocom на /dev/ttyUSB0 [эмулятор терминала]
+
 
