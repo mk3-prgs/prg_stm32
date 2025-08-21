@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="prg_stm32" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<MakeCommands>
+			<Build command="" />
+			<CompileFile command="" />
+			<Clean command="" />
+			<DistClean command="" />
+			<AskRebuildNeeded command="" />
+			<SilentBuild command=" &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="x86">
+				<Option output="../../Inkubator/x-mnt/bin/prg_stm32" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-s" />
+					<Add option="-DRS232" />
+				</Compiler>
+			</Target>
+			<Target title="armhf">
+				<Option output="../../Inkubator/x-mnt/bin/prg_stm32" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc_armhf" />
+				<Compiler>
+					<Add option="-mcpu=cortex-a9" />
+					<Add option="-mthumb" />
+					<Add option="-mhard-float" />
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DGPIO" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="cmd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmd.h" />
+		<Unit filename="hex_bin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="hex_bin.h" />
+		<Unit filename="io.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="io.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="page.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="page.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
