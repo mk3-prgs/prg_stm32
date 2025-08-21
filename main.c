@@ -90,8 +90,8 @@ uint32_t n_pages=0;
     //
     ctx->s = -1;
     //
-    strcpy(device, "/dev/ttymxc1");
-    //strcpy(device, "/dev/ttyUSB0");
+    //strcpy(device, "/dev/ttymxc1");
+    strcpy(device, "/dev/ttyUSB0");
     sprintf(command, "/usr/bin/picocom --imap lfcrlf -b 115200 -d8 -p1 -fn -l %s", device);
     //
     for(i=0; i<256; i++) { filename[i] = 0; n_page[i] = -1;}

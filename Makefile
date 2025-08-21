@@ -1,6 +1,12 @@
 CC=gcc
+
+#CC=arm-linux-gnueabihf-gcc
+# -DGPIO
+# -DRS232
+
 CFLAGS=-c -Wall -DRS232 -Wno-unused-function
-LDFLAGS=-s
+
+LDFLAGS=
 SOURCES=main.c hex_bin.c cmd.c page.c io.c
 OBJECTS=$(SOURCES:.c=.o)
 EXECUTABLE=./bin/prg_stm32
