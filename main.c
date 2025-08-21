@@ -1,4 +1,3 @@
-# remote
 #include <sys/poll.h>
 #include <errno.h>
 #include <stdio.h>
@@ -470,4 +469,5 @@ end:;
     //if(ctx->s > 0) p_close(ctx);
 	return(ret);
 }
+
 
