@@ -1,3 +1,4 @@
+<pre>
 OS Debian, Ubuntu ...
 Язык: C
 
@@ -25,11 +26,11 @@ OS Debian, Ubuntu ...
     -f Имя файла.
     -i Вывод доп. информации
     
-Пример:
+Пример:<br>
 ./bin/prg_stm32 -t -e -w -v -f file.hex
 	стереть,
 	записать файл file.hex
 	проверить
 	запустить picocom на /dev/ttyUSB0 [эмулятор терминала]
-
+</pre>
 
