@@ -3,6 +3,9 @@ OS Debian, Ubuntu ...
 Язык: C
 
 Программатор stm32, gd32.
+Работает через заводской (зашитый) загрузчик (BOOTLOADER).
+Используются сигналы микроконтроллера:
+	UART_Rx, UART_Tx, RST, BOOT0.
 
 Сборка:
 	make clean
@@ -33,4 +36,5 @@ OS Debian, Ubuntu ...
 	проверить
 	запустить picocom на /dev/ttyUSB0 [эмулятор терминала]
 </pre>
+
 
